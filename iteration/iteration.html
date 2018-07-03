@@ -11775,7 +11775,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Iteration">Iteration<a class="anchor-link" href="#Iteration">&#182;</a></h1><p>Iteration beautifully done in both <code>python</code> and <code>javascript</code></p>
+<h1 id="Iteration">Iteration<a class="anchor-link" href="#Iteration">&#182;</a></h1><p>Beautiful iteration in both <code>python</code> and <code>javascript</code>.</p>
 
 </div>
 </div>
@@ -11995,7 +11995,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">FootballTeam</span><span class="p">:</span>
@@ -12023,7 +12023,13 @@ div#notebook {
 
 
 <span class="n">fc</span> <span class="o">=</span> <span class="n">FootballTeam</span><span class="p">()</span>
-<span class="n">fc</span><span class="o">.</span><span class="n">add_players</span><span class="p">(</span><span class="s2">&quot;boaz salossa&quot;</span><span class="p">,</span> <span class="s2">&quot;kurniawan dwi yulianto&quot;</span><span class="p">,</span> <span class="s2">&quot;bima sakti&quot;</span><span class="p">,</span> <span class="s2">&quot;bambang pamungkas&quot;</span><span class="p">)</span>
+<span class="n">fc</span><span class="o">.</span><span class="n">add_players</span><span class="p">(</span>
+    <span class="s2">&quot;boaz salossa&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;kurniawan dwi yulianto&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;bima sakti&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;bambang pamungkas&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+
 <span class="n">num_player</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">fc</span><span class="p">:</span>
     <span class="n">num_player</span> <span class="o">+=</span> <span class="mi">1</span>
@@ -12092,7 +12098,12 @@ div#notebook {
 <span class="p">}</span>
 
 <span class="n">let</span> <span class="n">fc</span> <span class="o">=</span> <span class="n">new</span> <span class="n">FootballTeam</span><span class="p">();</span>
-<span class="n">fc</span><span class="o">.</span><span class="n">addPlayers</span><span class="p">(</span><span class="s2">&quot;boaz salossa&quot;</span><span class="p">,</span> <span class="s2">&quot;kurniawan dwi yulianto&quot;</span><span class="p">,</span> <span class="s2">&quot;bima sakti&quot;</span><span class="p">,</span> <span class="s2">&quot;bambang pamungkas&quot;</span><span class="p">);</span>
+<span class="n">fc</span><span class="o">.</span><span class="n">addPlayers</span><span class="p">(</span>
+    <span class="s2">&quot;boaz salossa&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;kurniawan dwi yulianto&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;bima sakti&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;bambang pamungkas&quot;</span><span class="p">,</span>
+<span class="p">);</span>
 
 <span class="n">let</span> <span class="n">num_player</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 <span class="k">for</span> <span class="p">(</span><span class="n">let</span> <span class="n">p</span> <span class="n">of</span> <span class="n">fc</span><span class="p">)</span> <span class="p">{</span>
@@ -12164,7 +12175,8 @@ div#notebook {
 <span class="nb">next</span><span class="p">(</span><span class="n">infinite_datetime</span><span class="p">)</span>
 <span class="c1"># ... go on forever</span>
 
-<span class="c1"># please try it (by uncomment below), to get to see the infinite sequence of time</span>
+<span class="c1"># please try it (by uncomment below), </span>
+<span class="c1"># to get to see the infinite sequence of time</span>
 <span class="c1"># and press CTRL + C, to end it like a boss!</span>
 
 <span class="c1"># now = next(infinite_datetime)</span>
@@ -12238,7 +12250,8 @@ Not a chance!
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># read file, line by line until the callable produces the sentinel value, in this example which is, &quot;END HERE&quot; </span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># read file, line by line until the callable produces the sentinel value, </span>
+<span class="c1"># in this example which is, &quot;END HERE&quot; </span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;text_with_end.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;rt&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">in_file</span><span class="p">:</span>
     <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="nb">iter</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="n">in_file</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span> <span class="s2">&quot;END HERE&quot;</span><span class="p">):</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
@@ -12272,8 +12285,8 @@ This is super important for you to read
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Generator">Generator<a class="anchor-link" href="#Generator">&#182;</a></h2><p>Generator is a function that generates an iterator in a lazy way, one at a time.</p>
-<p>The keyword of generator is <code>yield</code> instead of <code>return</code>. Let's talk about it, briefly.</p>
+<h2 id="Generator">Generator<a class="anchor-link" href="#Generator">&#182;</a></h2><p>Generator is a function that generates an iterator in a lazy way, one at a time.
+The keyword of generator is <code>yield</code> instead of <code>return</code>. Let's talk about it, briefly.</p>
 <p>The main difference that <code>yield</code> will return the thread of execution back to the caller (function) but only <strong>temporarily</strong> so that, it could <strong>resume</strong>. Think about it, like when you drive you need to yield at the roundabout (the triangle sign) so other cars could go circle through and you could resume driving at later time.</p>
 <p>So to sum up, <code>return</code> statement will throw away <strong>permanently</strong> a function's local state, where <code>yield</code> keeps the local state so it could be <strong>resumed</strong> at any time by calling <code>next()</code>.</p>
 <p>On top of that, in <code>js</code> the generator function is suffixed with an asterix or <code>function*</code> and uses <code>yield</code>. In python, it is simpler, just <code>yield</code>.</p>
@@ -12422,7 +12435,16 @@ This is super important for you to read
 <span class="p">}</span>
 
 <span class="n">let</span> <span class="n">lfc</span> <span class="o">=</span> <span class="n">new</span> <span class="n">LazyFootballTeam</span><span class="p">();</span>
-<span class="n">lfc</span><span class="o">.</span><span class="n">addPlayers</span><span class="p">(</span><span class="s2">&quot;Ronaldo&quot;</span><span class="p">,</span> <span class="s2">&quot;Ricky&quot;</span><span class="p">,</span> <span class="s2">&quot;Messi&quot;</span><span class="p">,</span> <span class="s2">&quot;Inzaghi&quot;</span><span class="p">,</span> <span class="s2">&quot;Del Piero&quot;</span><span class="p">,</span> <span class="s2">&quot;Nesta&quot;</span><span class="p">,</span> <span class="s2">&quot;Iniesta&quot;</span><span class="p">,</span> <span class="s2">&quot;Ricardo&quot;</span><span class="p">);</span>
+<span class="n">lfc</span><span class="o">.</span><span class="n">addPlayers</span><span class="p">(</span>
+    <span class="s2">&quot;Ronaldo&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;Ricky&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;Messi&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;Inzaghi&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;Del Piero&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;Nesta&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;Iniesta&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;Ricardo&quot;</span><span class="p">,</span>
+<span class="p">);</span>
 
 <span class="n">let</span> <span class="n">lazy_num_player</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 <span class="k">for</span> <span class="p">(</span><span class="n">let</span> <span class="n">p</span> <span class="n">of</span> <span class="n">lfc</span><span class="p">)</span> <span class="p">{</span>
@@ -12470,7 +12492,7 @@ This is super important for you to read
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">LazyFootballTeam</span><span class="p">:</span>
@@ -12486,7 +12508,16 @@ This is super important for you to read
 
 
 <span class="n">lfc</span> <span class="o">=</span> <span class="n">LazyFootballTeam</span><span class="p">()</span>
-<span class="n">lfc</span><span class="o">.</span><span class="n">add_players</span><span class="p">(</span><span class="s2">&quot;Ronaldo&quot;</span><span class="p">,</span> <span class="s2">&quot;Ricky&quot;</span><span class="p">,</span> <span class="s2">&quot;Messi&quot;</span><span class="p">,</span> <span class="s2">&quot;Inzaghi&quot;</span><span class="p">,</span> <span class="s2">&quot;Del Piero&quot;</span><span class="p">,</span> <span class="s2">&quot;Nesta&quot;</span><span class="p">,</span> <span class="s2">&quot;Iniesta&quot;</span><span class="p">,</span> <span class="s2">&quot;Ricardo&quot;</span><span class="p">)</span>
+<span class="n">lfc</span><span class="o">.</span><span class="n">add_players</span><span class="p">(</span>
+    <span class="s2">&quot;Ronaldo&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;Ricky&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;Messi&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;Inzaghi&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;Del Piero&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;Nesta&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;Iniesta&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;Ricardo&quot;</span><span class="p">,</span>
+<span class="p">)</span>
 <span class="n">lazy_num_player</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">lfc</span><span class="p">:</span>
     <span class="n">lazy_num_player</span> <span class="o">+=</span> <span class="mi">1</span>
@@ -12520,8 +12551,7 @@ This is super important for you to read
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Being-functionally-lazy-is-good">Being functionally lazy is good<a class="anchor-link" href="#Being-functionally-lazy-is-good">&#182;</a></h2><p>Okay, why should we bother with being <strong>functionally lazy</strong> ?</p>
-<p>Imagine that you have a collection of million objects, and you are only interested in a subset of it.
+<h2 id="Being-functionally-lazy-is-good">Being functionally lazy is good<a class="anchor-link" href="#Being-functionally-lazy-is-good">&#182;</a></h2><h3 id="Okay,-why-should-we-bother-with-being-functionally-lazy-?">Okay, why should we bother with being <strong>functionally lazy</strong> ?<a class="anchor-link" href="#Okay,-why-should-we-bother-with-being-functionally-lazy-?">&#182;</a></h3><p>Imagine that you have a collection of million objects, and you are only interested in a subset of it.
 And worse than that, you have a machine with only tiny memory to compute and you are a cheap guy, but smart one.</p>
 <p>In this scenario, given your smart brain you could use generator concept functionally, <strong>to the rescue!</strong>
 <strong>Being functionally lazy</strong> with generator makes computing cheap and more efficient based on the <em>least amount of work done's</em> principle.</p>
@@ -12747,8 +12777,8 @@ And of course, it is polluted with my favorite letter.</p>
         <span class="c1"># send(2) is to send back the value (in this case, 2),</span>
         <span class="c1"># where it stops its thread of execution</span>
         <span class="c1"># this value is stored as jump in the generator</span>
-        <span class="n">res_odd</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">odd_number_gen</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="mi">2</span><span class="p">)))</span>
-        <span class="n">next_odd</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">odd_number_gen</span><span class="p">)</span>
+        <span class="n">next_odd</span> <span class="o">=</span> <span class="n">odd_number_gen</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+        <span class="n">res_odd</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">next_odd</span><span class="p">)</span>
     <span class="k">except</span> <span class="ne">StopIteration</span><span class="p">:</span>
         <span class="k">break</span>
 <span class="c1"># no break</span>
@@ -12772,7 +12802,7 @@ And of course, it is polluted with my favorite letter.</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Odd numbers: [1, 3, 6, 9]
+<pre>Odd numbers: [1, 3, 5, 7, 9]
 </pre>
 </div>
 </div>
@@ -12785,7 +12815,7 @@ And of course, it is polluted with my favorite letter.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="generator-comprehension">generator comprehension<a class="anchor-link" href="#generator-comprehension">&#182;</a></h1><p>The idea of comprehension is to simplify the syntax, becoming terse to write for lazy programmers.</p>
+<h1 id="Generator-comprehension">Generator comprehension<a class="anchor-link" href="#Generator-comprehension">&#182;</a></h1><p>The idea of comprehension is to simplify the syntax, becoming terse to write for lazy programmers.</p>
 <p>Although it's cool to be short, please always prefer to be readable.
 After all it will save "The-future-You" in maintaining your code.</p>
 <p>Python and javascript uses <code>(&lt;expression&gt;)</code> as their syntatic-sugars for generator expression.</p>
