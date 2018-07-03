@@ -34,6 +34,9 @@ npm install -g ijavascript
 # (optional), vim-binding
 https://github.com/lambdalisue/jupyter-vim-binding
 
+# (optional), add-on functionality such as Ruler (column ruler)
+https://github.com/ipython-contrib/jupyter_contrib_nbextensions
+
 # now, you're good to go
 jupyter notebook
 ```
