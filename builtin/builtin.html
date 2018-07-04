@@ -11801,7 +11801,7 @@ With 64bit-machine it means: 1 bit is used for the sign, 11 bits for exponent an
 What does it mean? It means that up to $2^{53}$, it could be converted to float without losing any precision.
 Or the biggest number, limited up to $2^{53}$, that can be represented correctly by both <code>float</code> and <code>int</code> types.
 There lies the limit of doing arithmetic with floats.</p>
-<p>Meanwhile in javascript, number has only a single representation as 64-bit, like python float, which is <code>Number</code>, in which <code>Number.isInteger(1.0) === Number.isInteger(1)</code>. To get <code>Number.isInteger()</code> returns false you need to add at least 2 decimals, such as this expression would return true, <code>Number.isInteger(1.52) === false</code></p>
+<p>Meanwhile in javascript, number has only a single representation as 64-bit, like python float, which is <code>Number</code>, in which <code>Number.isInteger(1.0) === Number.isInteger(1)</code>. To get <code>Number.isInteger()</code> returns false you need to add at least 2 decimals, such as the following expression would return true, <code>Number.isInteger(1.52) === false</code></p>
 <p>Great, it is only one type of number, i.e, <code>Number</code> in js, meaning it is simple and convenient. 
 Unfortunately..., the precision is limited to 53 bits, i.e, $2^{53}$. Beyond that, it will come as a surprise as we will see later on.</p>
 <p>The safe range integer, $x$, for javascript: $-2^{53} + 1 &lt; x &lt; 2^{53} - 1 $</p>
