@@ -1,0 +1,6 @@
+.idea/
+*/.ipynb_checkpoints/
+*/*.js
+*/*.py
+*/*.tex
+pyjs/
